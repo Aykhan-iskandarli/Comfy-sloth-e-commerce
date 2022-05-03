@@ -1,0 +1,42 @@
+.products_section {
+    margin: rem(10) 0;
+
+    .products_list {
+        padding-left: rem(40);
+        padding-top: rem(10);
+
+        .porduct_list_top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 rem(5);
+
+            .products_grid {
+                display: flex;
+
+                button {
+                    border: 1px solid $borderColor;
+                    margin-right: rem(5);
+                }
+            }
+
+            .products_divider {
+                width: 50%;
+                height: rem(1);
+                background-color: $gray;
+            }
+
+            .product_sort_price {
+                display: flex;
+
+                p {
+                    margin-right: rem(15);
+                }
+            }
+        }
+
+        .products_content {
+            display: flex;
+        }
+    }
+}

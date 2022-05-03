@@ -1,0 +1,20 @@
+.hero{
+    background-color: $heroBg;
+    height: rem(150);
+    display: flex;
+    align-items: center;
+    .hero-content{
+        padding-left: rem(40);
+        a{
+            font-size: $font-size__lg;
+            color: $primary;
+            font-weight: $font-weight__bold_ex;
+        }
+        .pathname{
+            font-size: $font-size__lg;
+            text-transform: capitalize;
+            color: $darkBrown;
+            font-weight: $font-weight__bold_md;
+        }
+    }
+}

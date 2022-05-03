@@ -1,0 +1,69 @@
+.banner_section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .banner_content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .banner_left {
+            h1 {
+                font-size: $font-size__lg_ex;
+                color: $darkColor;
+                width: rem(380);
+                font-weight: $font-weight__bold_ex;
+            }
+
+            p {
+                margin: rem(40) 0;
+                color: $desc_gray;
+                line-height: rem(35);
+                font-size: $font-size__strong;
+                width: 80%;
+            }
+        }
+
+        .banner_right {
+            width: 100%;
+            height: 100%;
+            border-radius: $Bradius;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                left: 5.8%;
+                content: "";
+                background-color: $imgAfter;
+                height: 50%;
+                width: 7%;
+                border-radius: $Bradius;
+                 @include responsive(desktop) {
+                    position: absolute;
+                   }
+            }
+
+            .bg_main {
+                width: rem(450);
+                height: rem(550);
+                object-fit: cover;
+                border-radius: $Bradius;
+            }
+
+            .bg_secondary {
+                position: absolute;
+                bottom: 0;
+                left: rem(-40);
+                width: rem(240);
+                object-fit: contain;
+                border-radius: $Bradius;
+            }
+        }
+    }
+}

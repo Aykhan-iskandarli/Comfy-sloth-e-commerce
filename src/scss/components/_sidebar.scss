@@ -1,0 +1,49 @@
+.sidebar_section{
+    position: sticky;
+    top: 0;
+    padding-top: rem(10);
+    .aside{
+        .sidebar_title{
+            color: $black;
+            font-weight: $font-weight__bold;
+            font-size: $font-size__md;
+        }
+        .aside_search{
+            input{
+                border: 1px solid $borderColor;
+                width: 100%;
+            }
+        }
+        .sidebar_category{
+            margin-top: rem(10);
+            li{
+                cursor: pointer;
+                margin-bottom: rem(10);
+                color: $gray;
+                &:not(:last-child){
+                    margin-top: rem(7);
+                }
+            }
+        }
+        .sidebar_company{
+            margin: rem(20) 0;
+        }
+        .sidebar_color{
+            margin: rem(20) 0;
+        }
+        .sidebar_price{
+            margin: rem(20) 0;
+            input{
+                padding: 0;
+                width: 100%;
+            }
+        }
+        .sidebar_free_shipping{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+    }
+   
+}

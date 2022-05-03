@@ -1,0 +1,16 @@
+.footer {
+    background-color: $darkColor;
+    padding: 20px;
+    width: 100%;
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+
+        p {
+            color: $white;
+            font-weight: $font-weight__sm;
+            font-size: $default-size;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.navbar_section{
+    width: 100%;
+    height: rem(80);
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .menuList{
+            display: flex;
+            .menuList-item{
+                &:not(:last-child){
+                    margin-right: 25px;
+                }
+                a{
+                    font-size: $font-size__strong;
+                    color: $darkColor
+                }
+            }
+        }
+        &_right{
+            display: flex;
+            a{
+                color:$darkColor ;
+                position: relative;
+                font-size: $font-size__strong;
+                .badge{
+                    position: absolute;
+                    top: rem(-7);
+                    right: rem(-7);
+                    background-color: $primary;
+                    color: $white;
+                    width: rem(15);
+                    height: rem(15);
+                    border-radius: 50%;
+                    font-size: $font-size__xs;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:not(:last-child){
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}

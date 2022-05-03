@@ -1,0 +1,26 @@
+.subscription_section{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    .subs_left{
+        width: 100%;
+        h1{
+            font-size: $font-size__lg;
+            color: $darkColor;
+        }
+        p{
+            width: rem(520);
+            color:$desc_gray;
+            line-height: rem(30);
+            margin: rem(15) 0;
+        }
+    }
+    .subs_right{
+        padding-left: rem(20);
+        .subs_input{
+            margin-top: rem(20);
+            display: flex;
+        }
+    }
+}

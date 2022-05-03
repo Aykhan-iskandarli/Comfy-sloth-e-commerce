@@ -1,0 +1,51 @@
+.row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.container{
+    width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    @include responsive(mobile) {
+        width: 100%;
+        padding: 0 2rem;
+      }
+      @include responsive(tablet) {
+        width: 100%;
+        padding: 0 2rem;
+      }
+      @include responsive(laptop) {
+        width: 100%;
+        padding: 0 2rem;
+      }
+
+
+}
+
+
+
+.flex{
+    display: flex;
+}
+.mr-10{
+    margin-right: rem(10);
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+
+.mt-4{
+    margin-top: rem(40) ;
+}
+.mb-4{
+    margin-bottom: rem(40) ;
+}
